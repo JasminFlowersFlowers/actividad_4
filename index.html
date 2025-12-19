@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocina casera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Restaurante "Cocina Casera"</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#postres">Postres</a></li>
+                <li><a href="#almuerzos">Almuerzos</a></li>
+                <li><a href="#vegetarianos">Vegetarianos</a></li>
+                <li><a href="#pedido">Pedido online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MENÚ LATERAL IZQUIERDO (ANUNCIOS) -->
+    <aside id="anuncios">
+        <div class="anuncio">
+            <img src="anuncio1.jpeg" alt="Aceite de oliva">
+            <h4>Aceite de oliva virgen extra</h4>
+            <p>El sabor auténtico del Mediterráneo.</p>
+        </div>
+        <div class="anuncio">
+            <img src="anuncio2.jpg" alt="Utensilios de cocina">
+            <h4>Utensilios de cocina</h4>
+            <p>Calidad profesional para tu hogar.</p>
+        </div>
+        <div class="anuncio">
+            <img src="anuncio3.jpeg" alt="Pizza oferta">
+            <h4>Ofertas de pizza</h4>
+            <p>¡2x1 en pizzas los viernes!</p>
+        </div>
+    </aside>
+
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- POSTRES -->
+        <section id="postres">
+            <h2>Postres</h2>
+
+            <article>
+                <h3>Canolli de Sicilia</h3>
+                <p>El postre más popular de Sicilia.</p>
+            </article>
+
+            <article>
+                <h3>Tiramisú</h3>
+                <p>Postre italiano con café y cacao.</p>
+            </article>
+
+            <article>
+                <h3>Papaya con miel</h3>
+                <p>Postre tropical lleno de vitaminas.</p>
+            </article>
+        </section>
+
+        <!-- ALMUERZOS -->
+        <section id="almuerzos">
+            <h2>Almuerzos</h2>
+
+            <article>
+                <h3>Spaghettis amatriciana</h3>
+                <p>Plato típico de la zona de Puglia.</p>
+            </article>
+
+            <article>
+                <h3>Paella valenciana</h3>
+                <p>Arroz tradicional con pollo y verduras.</p>
+            </article>
+
+            <article>
+                <h3>Pollo al horno</h3>
+                <p>Clásico y jugoso, ideal para el mediodía.</p>
+            </article>
+        </section>
+
+        <!-- VEGETARIANOS -->
+        <section id="vegetarianos">
+            <h2>Vegetarianos</h2>
+
+            <article>
+                <h3>Ensalada mediterránea</h3>
+                <p>Tomate, queso feta, aceitunas y aceite de oliva.</p>
+            </article>
+
+            <article>
+                <h3>Crema de calabaza</h3>
+                <p>Suave, ligera y perfecta para el frío.</p>
+            </article>
+
+            <article>
+                <h3>Tofu salteado</h3>
+                <p>Con verduras frescas y salsa de soja.</p>
+            </article>
+        </section>
+
+
+
+        <!-- FORMULARIO DE PEDIDO -->
+        <section id="pedido">
+            <h2>Realizar pedido online</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Elige tu plato</legend>
+
+                    <label>
+                        Plato:
+                        <select name="plato">
+                            <optgroup label="Postres">
+                                <option>Canolli</option>
+                                <option>Tiramisú</option>
+                                <option>Papaya con miel</option>
+                            </optgroup>
+
+                            <optgroup label="Almuerzos">
+                                <option>Spaghetti amatriciana</option>
+                                <option>Paella valenciana</option>
+                                <option>Pollo al horno</option>
+                            </optgroup>
+
+                            <optgroup label="Vegetarianos">
+                                <option>Ensalada mediterránea</option>
+                                <option>Crema de calabaza</option>
+                                <option>Tofu salteado</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Porción</legend>
+
+                    <label><input type="radio" name="porcion" value="pequeña"> Pequeña</label><br>
+                    <label><input type="radio" name="porcion" value="mediana"> Mediana</label><br>
+                    <label><input type="radio" name="porcion" value="grande"> Grande</label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Ingredientes extras</legend>
+
+                    <label><input type="checkbox" name="extra" value="queso"> Queso</label><br>
+                    <label><input type="checkbox" name="extra" value="salsa"> Salsa extra</label><br>
+                    <label><input type="checkbox" name="extra" value="pan"> Pan</label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Datos de entrega</legend>
+
+                    <label>Nombre:
+                        <input type="text" required>
+                    </label><br>
+
+                    <label>Dirección:
+                        <input type="text" required>
+                    </label><br>
+
+                    <label>Teléfono:
+                        <input type="tel" required>
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Enviar pedido">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Jaume © 2024</p>
+    </footer>
+
+</body>
+</html>
+
